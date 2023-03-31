@@ -1,0 +1,9 @@
+heart_attack:
+  id: heart_attack.dev.v0
+  description: Test model's capability of predicting the the likelihood of a heart attack.
+  metrics: [accuracy]
+
+heart_attack.dev.v0:
+  class: evals.elsuite.basic.match:Match
+  args:
+    samples_jsonl: heart_attack/samples.jsonl
